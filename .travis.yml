@@ -1,0 +1,26 @@
+language: node_js
+
+node_js:
+  - "10"
+
+sudo: false
+
+cache:
+  directories:
+    - "node_modules"
+
+branches:
+  only:
+    - master
+
+script:
+  - npm run build:release
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep-history: false
+  local-dir: dist/agc1
+  on:
+    branch: master
