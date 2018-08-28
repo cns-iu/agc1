@@ -8,7 +8,7 @@ import { MavPubDatabase, DatabaseService } from 'cns-pubvis';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'AGC1 Primary Investigators';
+  title = 'IU Addictions Grand Challenge, Phase I - Primary Investigators';
   public dataLoaded = false;
   constructor(private databaseService: DatabaseService) { }
 

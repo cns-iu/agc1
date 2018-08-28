@@ -6,19 +6,9 @@
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
 [![View Demo](https://img.shields.io/badge/demo-online-brightgreen.svg)](https://cns-iu.github.io/agc1)
 
-## Demo site
+## Website
 
 <https://cns-iu.github.io/agc1/>
-
-## Change Log
-
-See the [ChangeLog](CHANGELOG.md) for the latest developments.
-
-## Usage
-
-TODO
-
-See the demo app in the [src directory](https://github.com/cns-iu/agc1/tree/develop/src/app).
 
 ## Credits
 
