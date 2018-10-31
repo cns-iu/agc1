@@ -14,10 +14,22 @@ The queries used are saved in the [wos-extract.isi_history.wos](wos-extract.isi_
 
 You can export from the results page by clicking the dropdown box arrow and selecting `Save to Other File Formats`. A popup box will appear. Select the record range (you can do 500 records at a time) and choose `Full Record and Cited References` as the Record Content. Finally make sure the File Format is selected as `Other Reference Software`. When you click Send, an ISI/RIS file is generated. Save all of those and then merge them by concatenating them and removing the header/footer of subsequent files where appropriate. Make sure to the combined file has a `.isi` extension and is saved in this directory as `wos-extract.isi`.
 
+## Data Processing Methods
 
-## Co-author Network Extraction
+### Data reformatting
+Load the data file into Sci2 as ISI format, and save the processed results as a csv (wos-extact.csv). 
 
-Load the ISI file into Sci2, extract a coauthor network, and layout the network with DrL/OpenOrd. Save the network file as an `.nwb` file into this directory as `wos-extract.isi_full-layout.nwb`
+Next, in Open Refine create a new project using the *wos-extract.csv* file. In the project, apply the set of processing steps found in *refine-isi-authors.json*, and save results as, *wos-extract.isi_author.csv*.
+
+### Author name disambiguation
+Next, in Open Refine create a new project using the *wos-extract.isi_author.csv*. file. In the project, apply the set of processing steps found in *refine-isi-authordisambiguation.json*, and save results as, *wos-extract.isi_author-disambiguation.csv*. This file is saved in the main data directory for the AGC1 visualization. 
+
+### Co-author Network Extraction
+After creating the *wos-extract.isi_author-disambiguation.csv* data set, we create a final Open Refine project that uses this same file to create a merged data set that will be used to update the *wos-extract.csv* data set. Apply the refine processing steps from the *refine-isi-mergeAuthorNames-sciGephi.json*; (save) the results as *wos-extract.cleaned-coauthornet.csv*.
+
+Next, open *wos-extract.cleaned-coauthornet.csv* and *wos-extract.csv* in a data editor, like Excel. Clear the original Authors and Authors (Full Name) fields, and then use a VLOOKUP function that looks-up the replacement Author and Author (Full Name) by the Unique ID (*wos-extract.csv*) and id field (*wos-extract.cleaned-coauthornet.csv*). The updated *wos-extract.csv* is saved as *wos-extract.cleaned-coauthornet.csv*.
+
+With Sci2, load the updated *wos-extract.cleaned-coauthornet.csv* and run the workflow process outlined in the *sci2-wos-extract-cleaned-coauthornetGephi-worlflow.xml*. The extracted co-author network is passed to Gephi for the final layout of the co-author network, and the addition of a boolean field, "show_label*. The *show_label* field must be updated with the list of Principle Investigators listed in the file *wos-extract.isi_history.wos*. The final layout is saved as a GEXF formatted network, and saved as *wos-extract.isi_full-layout.gexf*
 
 ## Data Loading
 
