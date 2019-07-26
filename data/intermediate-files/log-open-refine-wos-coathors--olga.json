@@ -1,0 +1,4063 @@
+[
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Authors using expression value.trim()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Authors",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Authors (Full Names) using expression value.trim()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Authors (Full Names)",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column Authors (Full Names)",
+    "columnName": "Authors (Full Names)",
+    "keyColumnName": "Abstract",
+    "mode": "separator",
+    "separator": "|",
+    "regex": false
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Authors (Full Names)",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Authors (Full Names)",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "VanderVeen, J. D.",
+          "Vanderveen, J. D."
+        ],
+        "to": "VanderVeen, J. D."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Honrao, Chandrashekhar",
+          "Chandrashekhar, Honrao"
+        ],
+        "to": "Honrao, Chandrashekhar"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Hu, S.",
+          "Hu, S. S."
+        ],
+        "to": "Hu, S."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Zhang, JunJie",
+          "Zhang, Junjie"
+        ],
+        "to": "Zhang, JunJie"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Nedden, M. zur",
+          "zur Nedden, M."
+        ],
+        "to": "Nedden, M. zur"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Aranda, C. Padilla",
+          "Padilla Aranda, C."
+        ],
+        "to": "Aranda, C. Padilla"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Van Hulle, C. A.",
+          "Van, Hulle C. A."
+        ],
+        "to": "Van Hulle, C. A."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pleier, M. -A",
+          "Pleier, M. -A."
+        ],
+        "to": "Pleier, M. A"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Berlingen, J. Montejo",
+          "Montejo Berlingen, J."
+        ],
+        "to": "Berlingen, J. Montejo"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Gilbert, Amy Lewis",
+          "GIlbert, Amy Lewis"
+        ],
+        "to": "Gilbert, Amy Lewis"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Van Hulle, Carol",
+          "van Hulle, Carol"
+        ],
+        "to": "Van Hulle, Carol"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cho, Beom-Young",
+          "Cho, Beom-young"
+        ],
+        "to": "Cho, Beom-Young"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Lee, C. H.",
+          "Lee, C. -H."
+        ],
+        "to": "Lee, C. H."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Vinet, J. -Y.",
+          "Vinet, J. Y."
+        ],
+        "to": "Vinet, J. Y."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Frank, K",
+          "Frank, K."
+        ],
+        "to": "Frank, K."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Lichtenstein, Paul",
+          "Paul, Lichtenstein"
+        ],
+        "to": "Lichtenstein, Paul"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Machado Miguens, J.",
+          "Miguens, J. Machado"
+        ],
+        "to": "Machado Miguens, J."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Van den Broeck, C.",
+          "van den Broeck, C."
+        ],
+        "to": "Van den Broeck, C."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Yan, L.",
+          "Yan, L. L."
+        ],
+        "to": "Yan, L."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Van Der Pol, Barbara",
+          "Van der Pol, Barbara"
+        ],
+        "to": "Van Der Pol, Barbara"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Chen, H. -Y.",
+          "Chen, H. Y."
+        ],
+        "to": "Chen, H. Y."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Garzon, G. Otero y",
+          "Otero y Garzon, G."
+        ],
+        "to": "Garzon, G. Otero"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Van Hulle, Carol A.",
+          "Hulle, Carol A. Van"
+        ],
+        "to": "Van Hulle, Carol A."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cui, W.",
+          "Cui, W. W."
+        ],
+        "to": "Cui, W."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pacheco Pages, A.",
+          "Pages, A. Pacheco"
+        ],
+        "to": "Pacheco Pages, A."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Van Beuzekom, M.",
+          "van Beuzekom, M."
+        ],
+        "to": "Van Beuzekom, M."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ouyang, Fangqian",
+          "Ouyang Fangqian"
+        ],
+        "to": "Ouyang, Fangqian"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cheng, L",
+          "Cheng, L."
+        ],
+        "to": "Cheng, L"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ikram, Arfan M.",
+          "Ikram, M. Arfan"
+        ],
+        "to": "Ikram, Arfan M."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Hong-Van Tieu",
+          "Tieu, Hong-Van"
+        ],
+        "to": "Hong-Van Tieu"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Turkheimer, E",
+          "Turkheimer, E."
+        ],
+        "to": "Turkheimer, E"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Schaarschmidt, J.",
+          "Schaarschmidt, J. J."
+        ],
+        "to": "Schaarschmidt, J."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Da Cunha Sargedas De Sousa, M. J.",
+          "Da Cunha Sargedas de Sousa, M. J."
+        ],
+        "to": "Da Cunha Sargedas De Sousa, M. J."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Perez, M. Villaplana",
+          "Villaplana Perez, M."
+        ],
+        "to": "Perez, M. Villaplana"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ferrer, J. A. Valls",
+          "Valls Ferrer, J. A."
+        ],
+        "to": "Ferrer, J. A. Valls"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Davidson, D. D.",
+          "Davidson, D."
+        ],
+        "to": "Davidson, D. D."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Kroenke, K.",
+          "Kroenke, K"
+        ],
+        "to": "Kroenke, K."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Edmonds, Brownsyne Tucker",
+          "Tucker Edmonds, Brownsyne"
+        ],
+        "to": "Edmonds, Brownsyne Tucker"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Latour, B. Martin Dit",
+          "Latour, B. Martin dit"
+        ],
+        "to": "Latour, B. Martin Dit"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Zendri, J. -P",
+          "Zendri, J. -P."
+        ],
+        "to": "Zendri, J. P."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DePoy, D. L.",
+          "Depoy, D. L."
+        ],
+        "to": "DePoy, D. L."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "McInnis, Sydney",
+          "Mcinnis, Sydney"
+        ],
+        "to": "McInnis, Sydney"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Litzelman, D",
+          "Litzelman, D."
+        ],
+        "to": "Litzelman, D."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Khashan, Ali S.",
+          "Ali, Khashan S."
+        ],
+        "to": "Khashan, Ali S."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Zhou, W.",
+          "Zhou, W"
+        ],
+        "to": "Zhou, W."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Kirk, J.",
+          "Kirk, J. J."
+        ],
+        "to": "Kirk, J."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DeBra, D.",
+          "Debra, D."
+        ],
+        "to": "DeBra, D."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Llorente Merino, J.",
+          "Merino, J. Llorente"
+        ],
+        "to": "Llorente Merino, J."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Juste Rozas, A.",
+          "Rozas, A. Juste"
+        ],
+        "to": "Juste Rozas, A."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Smith, R. C.",
+          "Smith', R. C."
+        ],
+        "to": "Smith, R. C."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Simon, Kosali I.",
+          "Simon, Kosali, I"
+        ],
+        "to": "Simon, Kosali I."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Llacer, M. Moreno",
+          "Moreno Llacer, M."
+        ],
+        "to": "Llacer, M. Moreno"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Hu, Sherry Shu-Jung",
+          "Hu, Sherry Shujung"
+        ],
+        "to": "Hu, Sherry Shu-Jung"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "De Ugarte-Postigo, A.",
+          "de Ugarte-Postigo, A."
+        ],
+        "to": "De Ugarte-Postigo, A."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Taylor, J. A.",
+          "Taylor, A. J."
+        ],
+        "to": "Taylor, J. A."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Du, Y.",
+          "Du, Y. Y."
+        ],
+        "to": "Du, Y."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Wang, X",
+          "Wang, X."
+        ],
+        "to": "Wang, X."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Van Bakel, N.",
+          "van Bakel, N."
+        ],
+        "to": "Van Bakel, N."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AultO'Neal, K.",
+          "AultONeal, K."
+        ],
+        "to": "AultO'Neal, K."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Rosell, A. Carnero",
+          "Carnero Rosell, A."
+        ],
+        "to": "Rosell, A. Carnero"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Williams, R. D.",
+          "Williams, D. R."
+        ],
+        "to": "Williams, R. D."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Harden, K. Paige",
+          "Paige Harden, K."
+        ],
+        "to": "Harden, K. Paige"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Langstrom, Niklas",
+          "Niklas, Langstrom"
+        ],
+        "to": "Langstrom, Niklas"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Hernandez Jimenez, Y.",
+          "Jimenez, Y. Hernandez"
+        ],
+        "to": "Hernandez Jimenez, Y."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "D'Onofrio, Brian",
+          "Donofrio, Brian"
+        ],
+        "to": "D'Onofrio, Brian"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Della Volpe, D.",
+          "della Volpe, D."
+        ],
+        "to": "Della Volpe, D."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Castillo Gimenez, V.",
+          "Gimenez, V. Castillo"
+        ],
+        "to": "Castillo Gimenez, V."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pastor, E. Torro",
+          "Torro Pastor, E."
+        ],
+        "to": "Pastor, E. Torro"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "da Costa, L. N.",
+          "Da Costa, L. N."
+        ],
+        "to": "da Costa, L. N."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Yurkov, V.",
+          "Yurkov, V. V."
+        ],
+        "to": "Yurkov, V."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Weber, M. S.",
+          "Weber, S. M."
+        ],
+        "to": "Weber, M. S."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "McRae, T.",
+          "Mcrae, T."
+        ],
+        "to": "McRae, T."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Lin, H.",
+          "Lin, H"
+        ],
+        "to": "Lin, H."
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Authors (Full Names)",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Authors (Full Names)",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Lin, Hsien-Chang",
+          "Lin, Hsien Chang"
+        ],
+        "to": "Lin, Hsien-Chang"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Martin, N. G.",
+          "Martin, NG"
+        ],
+        "to": "Martin, N. G."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Counsell, SR",
+          "Counsell, S. R."
+        ],
+        "to": "Counsell, S. R."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Iliadou, Anastasia",
+          "Iliadou, Anastasia N."
+        ],
+        "to": "Iliadou, Anastasia"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Karyadi, K. A.",
+          "Karyadi, K."
+        ],
+        "to": "Karyadi, K. A."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "D'Onofrio, B. M.",
+          "D'Onofrio, BM"
+        ],
+        "to": "D'Onofrio, B. M."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Stokes, Samantha",
+          "Stokes, Samantha M."
+        ],
+        "to": "Stokes, Samantha"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Wiehe, Sarah E.",
+          "Wiehe, Sarah"
+        ],
+        "to": "Wiehe, Sarah E."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Slutske, W. S.",
+          "Slutske, WS"
+        ],
+        "to": "Slutske, W. S."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Mackey, David A.",
+          "Mackey, David"
+        ],
+        "to": "Mackey, David A."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Fortenberry, JD",
+          "Fortenberry, J. D."
+        ],
+        "to": "Fortenberry, J. D."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Zimet, GD",
+          "Zimet, G. D."
+        ],
+        "to": "Zimet, G. D."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Litzelman, DK",
+          "Litzelman, D. K."
+        ],
+        "to": "Litzelman, D. K."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Lu, L.",
+          "Lu, Lu"
+        ],
+        "to": "Lu, L."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Oreglia, M. J.",
+          "Oreglia, Mj"
+        ],
+        "to": "Oreglia, M. J."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Embi, PJ",
+          "Embi, P. J."
+        ],
+        "to": "Embi, P. J."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Fettes, Danielle L.",
+          "Fettes, Danielle"
+        ],
+        "to": "Fettes, Danielle L."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Bernstein, D. I.",
+          "Bernstein, DI"
+        ],
+        "to": "Bernstein, D. I."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Hawkins, Misty A.",
+          "Hawkins, Misty A. W."
+        ],
+        "to": "Hawkins, Misty A."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Lin, H. C.",
+          "Lin, H-C"
+        ],
+        "to": "Lin, H. C."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Lin, H-J L.",
+          "Lin, H-JL"
+        ],
+        "to": "Lin, H-J. L."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Heath, A. C.",
+          "Heath, AC"
+        ],
+        "to": "Heath, A. C."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Barnes, Priscilla",
+          "Barnes, Priscilla R."
+        ],
+        "to": "Barnes, Priscilla"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Koch, M. O.",
+          "Koch, MO"
+        ],
+        "to": "Koch, M. O."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Wiehe, SE",
+          "Wiehe, S. E."
+        ],
+        "to": "Wiehe, S. E."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Escobar, C.",
+          "Escobar, C. O."
+        ],
+        "to": "Escobar, C."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Class, Quetzal A.",
+          "Class, Quetzal"
+        ],
+        "to": "Class, Quetzal A."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Arguin, J-F.",
+          "Arguin, J. -F."
+        ],
+        "to": "Arguin, J. F."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Boehm, S. L., II",
+          "Boehm, S. L., III"
+        ],
+        "to": "Boehm, S. L."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Liu, Li",
+          "Liu, L."
+        ],
+        "to": "Liu, Li"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Rosenthal, S. L.",
+          "Rosenthal, SL"
+        ],
+        "to": "Rosenthal, S. L."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Westmoreland, GR",
+          "Westmoreland, G. R."
+        ],
+        "to": "Westmoreland, G. R."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Karyadi, Kenny A.",
+          "Karyadi, Kenny"
+        ],
+        "to": "Karyadi, Kenny A."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pescosolido, BA",
+          "Pescosolido, B. A."
+        ],
+        "to": "Pescosolido, B. A."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Wood, Jodi Anne T.",
+          "Wood, JodiAnne T."
+        ],
+        "to": "Wood, Jodi Anne T."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Maslennikov, A. L.",
+          "Maslennikov, Al."
+        ],
+        "to": "Maslennikov, A. L."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Wright, E. R.",
+          "Wright, ER"
+        ],
+        "to": "Wright, E. R."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Aalsma, MC",
+          "Aalsma, M. C."
+        ],
+        "to": "Aalsma, M. C."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Boehm, Stephen L., II",
+          "Boehm, Stephen L., III"
+        ],
+        "to": "Boehm, Stephen L."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Emery, R. E.",
+          "Emery, RE"
+        ],
+        "to": "Emery, R. E."
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Authors (Full Names)",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Authors (Full Names)",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Holtzworth-Munroe, Amy",
+          "Holtzworth-Munroe, A."
+        ],
+        "to": "Holtzworth-Munroe, Amy"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Authors (Full Names)",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Authors (Full Names)",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Aalsma, M."
+        ],
+        "to": "Aalsma, M. C."
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Authors (Full Names)",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Authors (Full Names)",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Tikhonov, Y. A.",
+          "Tikhonov, Yu. A."
+        ],
+        "to": "Tikhonov, Y. A."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Smith, Gregory T.",
+          "Smith, Gregoty T."
+        ],
+        "to": "Smith, Gregory T."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Manicke, Nicholas E.",
+          "Manicke, Nicolas E."
+        ],
+        "to": "Manicke, Nicholas E."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Bustillo, J. Calderon",
+          "Bustillo, J. Caldern"
+        ],
+        "to": "Bustillo, J. Calderon"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Hillard, Cecelia J.",
+          "Hillard, Cecilia J."
+        ],
+        "to": "Hillard, Cecelia J."
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Authors (Full Names)",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Authors (Full Names)",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Serlachius, Eva",
+          "Serlachius, E."
+        ],
+        "to": "Serlachius, Eva"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Rodgers, Joseph Lee",
+          "Rodgers, Joseph L."
+        ],
+        "to": "Rodgers, Joseph Lee"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cottingham, Ann H.",
+          "Cottingham, A. H."
+        ],
+        "to": "Cottingham, Ann H."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Nyandiko, Winstone M.",
+          "Nvandiko, Winstone M."
+        ],
+        "to": "Nyandiko, Winstone M."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Wager-Miller, Jim",
+          "Wager-Miller, J."
+        ],
+        "to": "Wager-Miller, Jim"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Authors (Full Names)",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Authors (Full Names)",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Holtzworth-Munroe, Amy",
+          "Hotzworth-Munroe, Amy"
+        ],
+        "to": "Holtzworth-Munroe, Amy"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Authors (Full Names)",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Authors (Full Names)",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Gonzalez, J. Becerra",
+          "Gonzlez, J. Becerra"
+        ],
+        "to": "Gonzalez, J. Becerra"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Van Hulle, Carol A.",
+          "Van Hulle, Carole A."
+        ],
+        "to": "Van Hulle, Carol A."
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Authors (Full Names)",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Authors (Full Names)",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Khashan, Ali S.",
+          "Khashan, A. S."
+        ],
+        "to": "Khashan, Ali S."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pastore, Fr.",
+          "Pastore, F."
+        ],
+        "to": "Pastore, F."
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Authors (Full Names)",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Authors (Full Names)",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Schleyer, Titus K.",
+          "Schleyer, Titus",
+          "Schleyer, Titus K. L.",
+          "Schleyer, Titus L."
+        ],
+        "to": "Schleyer, Titus K."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Alexander, William H.",
+          "Alexander, William",
+          "Alexander, Will"
+        ],
+        "to": "Alexander, William H."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Schleyer, Titus K.",
+          "Schleyer, Titus K. L.",
+          "Schleyer, Titus L."
+        ],
+        "to": "Schleyer, Titus K."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Walthall, Jennifer",
+          "Walthall, Jennifer D. H."
+        ],
+        "to": "Walthall, Jennifer"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Owings, Charity",
+          "Owings, Charity G."
+        ],
+        "to": "Owings, Charity"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Bradshaw, Heather",
+          "Bradshaw, Heather B."
+        ],
+        "to": "Bradshaw, Heather"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Jones, Kirtly Parker, III",
+          "Jones, Kirtly Parker"
+        ],
+        "to": "Jones, Kirtly Parker"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Lehmann, Harold",
+          "Lehmann, Harold P."
+        ],
+        "to": "Lehmann, Harold"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Thyvalikakath, Thankam P.",
+          "Thyvalikakath, Thankam"
+        ],
+        "to": "Thyvalikakath, Thankam P."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Zimmers, Teresa A.",
+          "Zimmers, Teresa"
+        ],
+        "to": "Zimmers, Teresa A."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pfeifle, Andrea",
+          "Pfeifle, Andrea L."
+        ],
+        "to": "Pfeifle, Andrea"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Lichtenstein, Paul",
+          "Lichtenstein, P."
+        ],
+        "to": "Lichtenstein, Paul"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Roseberry, Jeremy C.",
+          "Roseberry, Jeremy"
+        ],
+        "to": "Roseberry, Jeremy C."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Zvonok, Alexander M.",
+          "Zvonok, Alexander"
+        ],
+        "to": "Zvonok, Alexander M."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sanders, Stephanie A.",
+          "Sanders, Stephanie"
+        ],
+        "to": "Sanders, Stephanie A."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Johansson, Anna",
+          "Johansson, Anna L. V."
+        ],
+        "to": "Johansson, Anna"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Litzelman, Debra K.",
+          "Litzelman, Debra"
+        ],
+        "to": "Litzelman, Debra K."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Abraham, Jean M.",
+          "Abraham, Jean Marie"
+        ],
+        "to": "Abraham, Jean M."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Baldwin, DeWitt C.",
+          "Baldwin, DeWitt C., Jr."
+        ],
+        "to": "Baldwin, DeWitt C."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cyders, Melissa A.",
+          "Cyders, Melissa"
+        ],
+        "to": "Cyders, Melissa A."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Oruche, Ukamaka Marian",
+          "Oruche, Ukamaka M."
+        ],
+        "to": "Oruche, Ukamaka Marian"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Hutchens, Jacqueline",
+          "Hutchens, Jacqueline M."
+        ],
+        "to": "Hutchens, Jacqueline"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Vaughan, Erikka",
+          "Vaughan, Erikka B."
+        ],
+        "to": "Vaughan, Erikka"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Manicke, Nicholas E.",
+          "Manicke, Nicholas"
+        ],
+        "to": "Manicke, Nicholas E."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Van Der Pol, Barbara",
+          "Van der Pol, Barbara J."
+        ],
+        "to": "Van Der Pol, Barbara"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Hendrix, Kristin S.",
+          "Hendrix, Kristin"
+        ],
+        "to": "Hendrix, Kristin S."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Bogdanchikov, A.",
+          "Bogdanchikov, A. G."
+        ],
+        "to": "Bogdanchikov, A."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ruhm, Christopher J.",
+          "Patrick, Christopher J."
+        ],
+        "to": "Ruhm, Christopher J."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Beasley, William",
+          "Beasley, William H."
+        ],
+        "to": "Beasley, William"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Freischlag, Julie A.",
+          "Freischlag, Julie"
+        ],
+        "to": "Freischlag, Julie A."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Shelton, Catherine L.",
+          "Chaton, Catherine T."
+        ],
+        "to": "Shelton, Catherine L."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Madden, Pamela A. F.",
+          "Madden, Pamela A."
+        ],
+        "to": "Madden, Pamela A. F."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Newhouse, Robin",
+          "Newhouse, Robin P."
+        ],
+        "to": "Newhouse, Robin"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Silverman, Ross D.",
+          "Silverman, Ross"
+        ],
+        "to": "Silverman, Ross D."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Draucker, Claire Burke",
+          "Draucker, Claire"
+        ],
+        "to": "Draucker, Claire Burke"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Valsangkar, Nakul P.",
+          "Valsangkar, Nakul"
+        ],
+        "to": "Valsangkar, Nakul P."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Feldman, Steven R.",
+          "Feldman, Steven"
+        ],
+        "to": "Feldman, Steven R."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Perkins, Anthony J.",
+          "Perkins, Anthony"
+        ],
+        "to": "Perkins, Anthony J."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Williams, Rebekah L.",
+          "Williams, Rebekah"
+        ],
+        "to": "Williams, Rebekah L."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Blythe, Margaret J.",
+          "Blythe, Margaret"
+        ],
+        "to": "Blythe, Margaret J."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Lahey, Benjamin B.",
+          "Lahey, Benjamin"
+        ],
+        "to": "Lahey, Benjamin B."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Childress, Sarah",
+          "Childress, Sarah D."
+        ],
+        "to": "Childress, Sarah"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dhopeshwarkar, Amey",
+          "Dhopeshwarkar, Amey S."
+        ],
+        "to": "Dhopeshwarkar, Amey"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Lopetegui, Marcelo",
+          "Lopetegui, Marcelo A."
+        ],
+        "to": "Lopetegui, Marcelo"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Steenburg, Scott D.",
+          "Steenburg, Scott"
+        ],
+        "to": "Steenburg, Scott D."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Makriyannis, Alexandros",
+          "Makriyannis, Alex"
+        ],
+        "to": "Makriyannis, Alexandros"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Runfola, Cristin",
+          "Runfola, Cristin D."
+        ],
+        "to": "Runfola, Cristin"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Francis, Heather",
+          "Francis, Heather M."
+        ],
+        "to": "Francis, Heather"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Fernandez de la Cruz, Lorena",
+          "Fernandez de la Cruz, L."
+        ],
+        "to": "Fernandez de la Cruz, Lorena"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Hultman, Christina M.",
+          "Hultman, Christina"
+        ],
+        "to": "Hultman, Christina M."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Multani, Gurprit",
+          "Multani, Gurprit S."
+        ],
+        "to": "Multani, Gurprit"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "VanderVeen, J. Davis",
+          "VanderVeen, J. D."
+        ],
+        "to": "VanderVeen, J. Davis"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Rushworth, Matthew",
+          "Rushworth, Matthew F. S."
+        ],
+        "to": "Rushworth, Matthew"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Jones, Howard W., III",
+          "Jones, Howard W."
+        ],
+        "to": "Jones, Howard W."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Rickert, Martin E.",
+          "Rickert, Martin"
+        ],
+        "to": "Rickert, Martin E."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Plawecki, Martin H.",
+          "Plawecki, Martin"
+        ],
+        "to": "Plawecki, Martin H."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Barnett, William",
+          "Barnett, William K."
+        ],
+        "to": "Barnett, William"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Bucholz, Kathleen K.",
+          "Bucholz, Kathleen"
+        ],
+        "to": "Bucholz, Kathleen K."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Aalsma, Matthew C.",
+          "Aalsma, Matthew M."
+        ],
+        "to": "Aalsma, Matthew C."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Niaura, Raymond",
+          "Niaura, Raymond S."
+        ],
+        "to": "Niaura, Raymond"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cowperthwaite, P.",
+          "Cowperthwaite, P. S."
+        ],
+        "to": "Cowperthwaite, P."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cottingham, Ann H.",
+          "Cottingham, Ann"
+        ],
+        "to": "Cottingham, Ann H."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Yamamoto, Bryan K.",
+          "Yamamoto, Bryan"
+        ],
+        "to": "Yamamoto, Bryan K."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Weibull, Caroline E.",
+          "Weibull, Caroline"
+        ],
+        "to": "Weibull, Caroline E."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Shivade, Chaitanya",
+          "Shivade, Chaitanya P."
+        ],
+        "to": "Shivade, Chaitanya"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Van Hulle, Carol A.",
+          "Van Hulle, Carol"
+        ],
+        "to": "Van Hulle, Carol A."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "McCord, Allison L.",
+          "McCord, Allison"
+        ],
+        "to": "McCord, Allison L."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Hosseinzadeh, Griffin",
+          "Hosseinzadeh, G."
+        ],
+        "to": "Hosseinzadeh, Griffin"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Picard, Christine J.",
+          "Picard, Christine"
+        ],
+        "to": "Picard, Christine J."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Panagiotopoulou, E.",
+          "Panagiotopoulou, E. St."
+        ],
+        "to": "Panagiotopoulou, E."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Danielson, Carla Kmett",
+          "Danielson, Carla K."
+        ],
+        "to": "Danielson, Carla Kmett"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Simon, Kosali I.",
+          "Simon, Kosali Ilayperuma"
+        ],
+        "to": "Simon, Kosali I."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Chanock, Stephen J.",
+          "Chanock, Stephen"
+        ],
+        "to": "Chanock, Stephen J."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "D'Onofrio, Brian M.",
+          "D'Onofrio, Brian"
+        ],
+        "to": "D'Onofrio, Brian M."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Navale, Shalini M.",
+          "Navale, Shalini"
+        ],
+        "to": "Navale, Shalini M."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Lawrence, Carrie A.",
+          "Lawrence, Carrie"
+        ],
+        "to": "Lawrence, Carrie A."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Schleyer, Titus K.",
+          "Schleyer, Titus K. L."
+        ],
+        "to": "Schleyer, Titus K."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Rickert, Vaughn I.",
+          "Rickert, Vaughn"
+        ],
+        "to": "Rickert, Vaughn I."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Zapolski, Tamika C. B.",
+          "Zapolski, Tamika"
+        ],
+        "to": "Zapolski, Tamika C. B."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Schneidinger, B.",
+          "Schneidinger, Bernd"
+        ],
+        "to": "Schneidinger, B."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Moomaw, Charles",
+          "Moomaw, Charles J."
+        ],
+        "to": "Moomaw, Charles"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Bernard, Stanley N.",
+          "Bernard, Stanley"
+        ],
+        "to": "Bernard, Stanley N."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Kleindorfer, Dawn",
+          "Kleindorfer, Dawn O."
+        ],
+        "to": "Kleindorfer, Dawn"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Fleischer, Alan",
+          "Fleischer, Alan B., Jr."
+        ],
+        "to": "Fleischer, Alan"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sieverdes, John C.",
+          "Sieverdes, John"
+        ],
+        "to": "Sieverdes, John C."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Neiderhiser, Jenae M.",
+          "Neiderhiser, Jenae"
+        ],
+        "to": "Neiderhiser, Jenae M."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Zapolski, Tamika C. B.",
+          "Zapolski, Tamika Chere Barkley"
+        ],
+        "to": "Zapolski, Tamika C. B."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Rodgers, Joseph Lee",
+          "Rodgers, Joseph"
+        ],
+        "to": "Rodgers, Joseph Lee"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Schleyer, Titus K. L.",
+          "Schleyer, Titus L."
+        ],
+        "to": "Schleyer, Titus K."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ellingson, Jarrod M.",
+          "Ellingson, Jarrod"
+        ],
+        "to": "Ellingson, Jarrod M."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cunningham-Erves, Jennifer",
+          "Erves, Jennifer Cunningham"
+        ],
+        "to": "Cunningham-Erves, Jennifer"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Eisenberg, Matthew D.",
+          "Eisenberg, Matthew"
+        ],
+        "to": "Eisenberg, Matthew D."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Haderxhanaj, Laura T.",
+          "Haderxhanaj, Laura"
+        ],
+        "to": "Haderxhanaj, Laura T."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Smoker, Michael P.",
+          "Smoker, Michael"
+        ],
+        "to": "Smoker, Michael P."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Markowitz, Lauri",
+          "Markowitz, Lauri E."
+        ],
+        "to": "Markowitz, Lauri"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Fortenberry, J. D.",
+          "Fortenberry, J. Dennis"
+        ],
+        "to": "Fortenberry, J. D."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Alexander, Andrew O.",
+          "Alexander, Andrew"
+        ],
+        "to": "Alexander, Andrew O."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Barnes, Priscilla",
+          "Barnes, Priscilla A."
+        ],
+        "to": "Barnes, Priscilla"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Gibbons, Robert D.",
+          "Gibbons, Robert"
+        ],
+        "to": "Gibbons, Robert D."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Alexander, William H.",
+          "Alexander, William"
+        ],
+        "to": "Alexander, William H."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Chiaia, Nicolas L.",
+          "Chiaia, Nicolas"
+        ],
+        "to": "Chiaia, Nicolas L."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Goldberg, Daniel M.",
+          "Goldberg, Daniel"
+        ],
+        "to": "Goldberg, Daniel M."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Thornton, Laura M.",
+          "Thornton, Laura"
+        ],
+        "to": "Thornton, Laura M."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Anderson, Valerie R.",
+          "Anderson, Valerie Rose"
+        ],
+        "to": "Anderson, Valerie R."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Hernandez-Brereton, Maria",
+          "Brereton, Maria"
+        ],
+        "to": "Hernandez-Brereton, Maria"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Monahan, Patrick",
+          "Monahan, Patrick O."
+        ],
+        "to": "Monahan, Patrick"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Salyers, Michelle P.",
+          "Salyers, Michelle"
+        ],
+        "to": "Salyers, Michelle P."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Swerdlow, Anthony",
+          "Swerdlow, Anthony J."
+        ],
+        "to": "Swerdlow, Anthony"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Eiler, William J.",
+          "Eiler, William J. A., II"
+        ],
+        "to": "Eiler, William J."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "von Hippel, Christiana D. J.",
+          "von Hippel, Christiana"
+        ],
+        "to": "von Hippel, Christiana D. J."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pescosolido, Bernice A.",
+          "Pescosolido, Bernice"
+        ],
+        "to": "Pescosolido, Bernice A."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Hershberger, Alexandra R.",
+          "Hershberger, Alexandra"
+        ],
+        "to": "Hershberger, Alexandra R."
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Authors (Full Names)",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Authors (Full Names)",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Aalsma, Matthew C.",
+          "Aalsma, Matthew"
+        ],
+        "to": "Aalsma, Matthew C."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Harman, Christopher",
+          "Haiman, Christopher A."
+        ],
+        "to": "Harman, Christopher"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Zertuche, L. Magana",
+          "Zertuche, L. Magaa"
+        ],
+        "to": "Zertuche, L. Magana"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Westmoreland, G. R.",
+          "Westmoreland, Glenda R."
+        ],
+        "to": "Westmoreland, G. R."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Hernandez, I. Magana",
+          "Hernandez, I. Magaa"
+        ],
+        "to": "Hernandez, I. Magana"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Authors (Full Names)",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Authors (Full Names)",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dabade, Tushar",
+          "Dabade, Tushar S."
+        ],
+        "to": "Dabade, Tushar"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Donahue, Kelly L.",
+          "Donahue, Kelly"
+        ],
+        "to": "Donahue, Kelly L."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Carroll, Aaron E.",
+          "Carroll, Aaron"
+        ],
+        "to": "Carroll, Aaron E."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Oberg, Anna Sara",
+          "Oberg, Anna S."
+        ],
+        "to": "Oberg, Anna Sara"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Best, Candace",
+          "Best, Candace C."
+        ],
+        "to": "Best, Candace"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Rathouz, Paul J.",
+          "Rathouz, Paul"
+        ],
+        "to": "Rathouz, Paul J."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Beard, Michael R.",
+          "Beard, Michael"
+        ],
+        "to": "Beard, Michael R."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Blaker, Amanda",
+          "Blaker, Amanda L."
+        ],
+        "to": "Blaker, Amanda"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sujan, Ayesha C.",
+          "Sujan, Ayesha"
+        ],
+        "to": "Sujan, Ayesha C."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Emery, Robert E.",
+          "Emery, Robert"
+        ],
+        "to": "Emery, Robert E."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Patel, Monita R.",
+          "Patel, Monita"
+        ],
+        "to": "Patel, Monita R."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Brown, Joshua W.",
+          "Brown, Joshua"
+        ],
+        "to": "Brown, Joshua W."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Rosenman, Marc B.",
+          "Rosenman, Marc"
+        ],
+        "to": "Rosenman, Marc B."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Payne, Philip R. O.",
+          "Payne, Philip"
+        ],
+        "to": "Payne, Philip R. O."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Coyne, Claire A.",
+          "Coyne, Claire"
+        ],
+        "to": "Coyne, Claire A."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Chapman, Erika",
+          "Chapman, Erika L."
+        ],
+        "to": "Chapman, Erika"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Etter, Dillon J.",
+          "Etter, Dillon"
+        ],
+        "to": "Etter, Dillon J."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pescosolido, Bernice A.",
+          "Pescosolido, B. A."
+        ],
+        "to": "Pescosolido, Bernice A."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Meyerson, Beth E.",
+          "Meyerson, Beth"
+        ],
+        "to": "Meyerson, Beth E."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pharoah, Paul D. P.",
+          "Pharoah, Paul"
+        ],
+        "to": "Pharoah, Paul D. P."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Joshi, Mugdha M.",
+          "Joshi, Mugdha"
+        ],
+        "to": "Joshi, Mugdha M."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Jones, Lindsey",
+          "Jones, Lindsey D."
+        ],
+        "to": "Jones, Lindsey"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Grout, Randall",
+          "Grout, Randall W."
+        ],
+        "to": "Grout, Randall"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ganiban, Jody",
+          "Ganiban, Jody M."
+        ],
+        "to": "Ganiban, Jody"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Marcus, David",
+          "Marcus, David J."
+        ],
+        "to": "Marcus, David"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Emetu, Roberta",
+          "Emetu, Roberta E."
+        ],
+        "to": "Emetu, Roberta"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Abraham, Jean M.",
+          "Abraham, Jean"
+        ],
+        "to": "Abraham, Jean M."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Hershberger, A. R.",
+          "Hershberger, A."
+        ],
+        "to": "Hershberger, A. R."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Turkheimer, Eric",
+          "Turkheimer, E"
+        ],
+        "to": "Turkheimer, Eric"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Kogan, Steven",
+          "Kogan, Steven M."
+        ],
+        "to": "Kogan, Steven"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Weir, Charlene R.",
+          "Weir, Charlene"
+        ],
+        "to": "Weir, Charlene R."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Simon, Kosali",
+          "Simon, Kosali I."
+        ],
+        "to": "Simon, Kosali"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Gabana, Nicole T.",
+          "Gabana, Nicole"
+        ],
+        "to": "Gabana, Nicole T."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Spotts, Erica L.",
+          "Spotts, Erica"
+        ],
+        "to": "Spotts, Erica L."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Wager-Miller, Jim",
+          "Wager-Miller, James"
+        ],
+        "to": "Wager-Miller, Jim"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Mataix-Cols, David",
+          "Mataix-Cols, D."
+        ],
+        "to": "Mataix-Cols, David"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Faidley, Micah T.",
+          "Faidley, Micah"
+        ],
+        "to": "Faidley, Micah T."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "McGinty, Emma E.",
+          "McGinty, Emma"
+        ],
+        "to": "McGinty, Emma E."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Williamson, Penelope R.",
+          "Williamson, PR"
+        ],
+        "to": "Williamson, Penelope R."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Adams, Zachary W.",
+          "Adams, Zachary"
+        ],
+        "to": "Adams, Zachary W."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "McKinley, Todd O.",
+          "McKinley, Todd"
+        ],
+        "to": "McKinley, Todd O."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Treiber, Frank A.",
+          "Treiber, Frank"
+        ],
+        "to": "Treiber, Frank A."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Simmons, Megan",
+          "Simmons, Megan K."
+        ],
+        "to": "Simmons, Megan"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Constancio, M.",
+          "Constancio, M., Jr."
+        ],
+        "to": "Constancio, M."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Rosenberger, Joshua G.",
+          "Rosenberger, J. G."
+        ],
+        "to": "Rosenberger, Joshua G."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Gilbert, Amy Lewis",
+          "Gilbert, Amy L."
+        ],
+        "to": "Gilbert, Amy Lewis"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Vaughan, Ellen L.",
+          "Vaughan, Ellen"
+        ],
+        "to": "Vaughan, Ellen L."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Watson, Dennis P.",
+          "Watson, Dennis"
+        ],
+        "to": "Watson, Dennis P."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Foraker, Randi E.",
+          "Foraker, Randi"
+        ],
+        "to": "Foraker, Randi E."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Walker, Jesse H.",
+          "Walker, Jesse"
+        ],
+        "to": "Walker, Jesse H."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Smith, William",
+          "Smith, William (Bill)"
+        ],
+        "to": "Smith, William"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Earnest, Mark",
+          "Earnest, Mark A."
+        ],
+        "to": "Earnest, Mark"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Griffin, Wilma J.",
+          "Griffin, Wilma"
+        ],
+        "to": "Griffin, Wilma J."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Maulden, Sarah",
+          "Maulden, Sarah A."
+        ],
+        "to": "Maulden, Sarah"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Jenkins, Peter C.",
+          "Jenkins, Peter"
+        ],
+        "to": "Jenkins, Peter C."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Bayt, Demetria R.",
+          "Bayt, Demetria"
+        ],
+        "to": "Bayt, Demetria R."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Galang, Romeo R.",
+          "Galang, Romeo"
+        ],
+        "to": "Galang, Romeo R."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Perkins, Anthony J.",
+          "Pekins, Anthony"
+        ],
+        "to": "Perkins, Anthony J."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Zimet, Gregory D.",
+          "Zimet, Gregory"
+        ],
+        "to": "Zimet, Gregory D."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabik, Lindsay",
+          "Sabik, Lindsay M."
+        ],
+        "to": "Sabik, Lindsay"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Bell, Teresa M.",
+          "Bell, Teresa Maria"
+        ],
+        "to": "Bell, Teresa M."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Garcia, Justin R.",
+          "Garcia, Justin"
+        ],
+        "to": "Garcia, Justin R."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Witzke, Robert",
+          "Witzke, Robert A."
+        ],
+        "to": "Witzke, Robert"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pontones, Pam",
+          "Pontones, Pamela"
+        ],
+        "to": "Pontones, Pam"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Tucker, Joseph D.",
+          "Tucker, Joseph"
+        ],
+        "to": "Tucker, Joseph D."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Downs, Stephen M.",
+          "Downs, Stephen"
+        ],
+        "to": "Downs, Stephen M."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Gorbovskoy, E.",
+          "Gorbovskoy, E. S."
+        ],
+        "to": "Gorbovskoy, E."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Kissela, Brett",
+          "Kissela, Brett M."
+        ],
+        "to": "Kissela, Brett"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Hultman, Christina M.",
+          "Dalman, Christina"
+        ],
+        "to": "Hultman, Christina M."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Willis, Aaron",
+          "Willis, Aaron C."
+        ],
+        "to": "Willis, Aaron"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Hershberger, Alexandra R.",
+          "Hershberger, A. R."
+        ],
+        "to": "Hershberger, Alexandra R."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Kokkonen, Erik W. J.",
+          "Kokkonen, Erik"
+        ],
+        "to": "Kokkonen, Erik W. J."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Holloway, Evan D.",
+          "Holloway, Evan"
+        ],
+        "to": "Holloway, Evan D."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Huff, Courtney",
+          "Huff, Courtney L."
+        ],
+        "to": "Huff, Courtney"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Combs, Jessica L.",
+          "Combs, Jessica"
+        ],
+        "to": "Combs, Jessica L."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Blasingame, Shelby N.",
+          "Blasingame, S. N."
+        ],
+        "to": "Blasingame, Shelby N."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Grannis, Shaun J.",
+          "Grannis, Shaun"
+        ],
+        "to": "Grannis, Shaun J."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Makriyannis, Alexandros",
+          "Makriyannis, A."
+        ],
+        "to": "Makriyannis, Alexandros"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Coskunpinar, Ayca",
+          "Coskunpinar, A."
+        ],
+        "to": "Coskunpinar, Ayca"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Fortenberry, J. D.",
+          "Fortenberry, J."
+        ],
+        "to": "Fortenberry, J. D."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Beasley, William",
+          "Beasley, Will"
+        ],
+        "to": "Beasley, William"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Linsenbardt, David N.",
+          "Linsenbardt, D. N."
+        ],
+        "to": "Linsenbardt, David N."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Bulik, Cynthia M.",
+          "Bulik, Cynthia"
+        ],
+        "to": "Bulik, Cynthia M."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Langstrom, Niklas",
+          "Laongstrom, Niklas"
+        ],
+        "to": "Langstrom, Niklas"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Gassman, Ruth A.",
+          "Gassman, Ruth"
+        ],
+        "to": "Gassman, Ruth A."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Wiggs, Kelsey K.",
+          "Wiggs, Kelsey"
+        ],
+        "to": "Wiggs, Kelsey K."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dir, Allyson L.",
+          "Dir, Allyson Lindsae"
+        ],
+        "to": "Dir, Allyson Lindsae"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Afdhal, Nezam",
+          "Afdhal, Nezam H."
+        ],
+        "to": "Afdhal, Nezam"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Balkrishnan, Rajesh",
+          "Balkrishnan, R."
+        ],
+        "to": "Balkrishnan, Rajesh"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Zarzaur, Ben L.",
+          "Zarzaur, Ben L., Jr."
+        ],
+        "to": "Zarzaur, Ben L."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Frantz, Travis L.",
+          "Frantz, Travis"
+        ],
+        "to": "Frantz, Travis L."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Mossbarger, David L.",
+          "Mossbarger, DL"
+        ],
+        "to": "Mossbarger, David L."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Hoover, Karen W.",
+          "Hoover, Karen"
+        ],
+        "to": "Hoover, Karen W."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Fortenberry, D",
+          "Fortenberry, Dennis"
+        ],
+        "to": "Fortenberry, Dennis"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Vachon, David",
+          "Vachon, David D."
+        ],
+        "to": "Vachon, David"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Lobodzinska, E. M.",
+          "Lobodzinska, E."
+        ],
+        "to": "Lobodzinska, E. M."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Quinn, Patrick D.",
+          "Quinn, Patrick"
+        ],
+        "to": "Quinn, Patrick D."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Bailey, Marlon M.",
+          "Bailey, Marlon"
+        ],
+        "to": "Bailey, Marlon M."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Straiker, Alex",
+          "Straiker, Alex J."
+        ],
+        "to": "Straiker, Alex"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Murphy, Shawn",
+          "Murphy, Shawn N."
+        ],
+        "to": "Murphy, Shawn"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Peters, Philip J.",
+          "Peters, Philip"
+        ],
+        "to": "Peters, Philip J."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Benneyworth, B. D.",
+          "Benneyworth, Brian D."
+        ],
+        "to": "Benneyworth, Brian D."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Hensel, Devon J.",
+          "Hensel, Devon"
+        ],
+        "to": "Hensel, Devon J."
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Authors (Full Names)",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Authors (Full Names)",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Kuja-Halkola, Ralf",
+          "Kuja-Halkola, R."
+        ],
+        "to": "Kuja-Halkola, Ralf"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Katzenstein, Jennifer",
+          "Katzenstein, JM"
+        ],
+        "to": "Katzenstein, Jennifer"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Outschoorn, V. I. Martinez",
+          "Outschoorn, V. Martinez"
+        ],
+        "to": "Outschoorn, V. Martinez"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Palliyaguru, N.",
+          "Palliyaguru, N. T."
+        ],
+        "to": "Palliyaguru, N. T."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pescosolido, Bernice A.",
+          "Pescosolido, B"
+        ],
+        "to": "Pescosolido, Bernice A."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Hershberger, Alexandra R.",
+          "Hershberger, A. R."
+        ],
+        "to": "Hershberger, Alexandra R."
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Authors (Full Names)",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Authors (Full Names)",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Wilson, Jeffery S.",
+          "Wilson, Jeff",
+          "Wilson, Jeffrey"
+        ],
+        "to": "Wilson, Jeffery S."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Litzelman, Debra K.",
+          "Litzelman, D. K.",
+          "Litzelman, D."
+        ],
+        "to": "Litzelman, Debra K."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Soukharev, A.",
+          "Soukharev, A. M."
+        ],
+        "to": "Soukharev, A. M."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Braver, Todd S.",
+          "Braver, Todd"
+        ],
+        "to": "Braver, Todd S."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Waldman, Irwin D.",
+          "Waldman, Irwin"
+        ],
+        "to": "Waldman, Irwin D."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dir, Allyson Lindsae",
+          "Dir, Allyson"
+        ],
+        "to": "Dir, Allyson Lindsae"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Anisenkov, A. V.",
+          "Anisenkov, A."
+        ],
+        "to": "Anisenkov, A. V."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dave, Dhaval",
+          "Dave, Dhaval M."
+        ],
+        "to": "Dave, Dhaval"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Liu, Gilbert C.",
+          "Liu, Gilbert"
+        ],
+        "to": "Liu, Gilbert C."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sjolander, Arvid",
+          "Sjolander, A."
+        ],
+        "to": "Sjolander, Arvid"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Goldstein, Alisa M.",
+          "Goldstein, A."
+        ],
+        "to": "Goldstein, Alisa M."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Van Hulle, Carol A.",
+          "Van Hulle, C. A."
+        ],
+        "to": "Van Hulle, Carol A."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Downs, Sarah M.",
+          "Downs, Sarah"
+        ],
+        "to": "Downs, Sarah M."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Aalsma, Matthew C.",
+          "Aalsma, Matt"
+        ],
+        "to": "Aalsma, Matthew C."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Brown, James R.",
+          "Brown, James"
+        ],
+        "to": "Brown, James R."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Robertson, Daniel H.",
+          "Robertson, D."
+        ],
+        "to": "Robertson, Daniel H."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Carter, Gregory",
+          "Carter, Greg"
+        ],
+        "to": "Carter, Gregory"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Davis, Scott A.",
+          "Davis, Scott"
+        ],
+        "to": "Davis, Scott A."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Companion, M.",
+          "Companion, Michel"
+        ],
+        "to": "Companion, Michel"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Martin, Jack K.",
+          "Martin, Jack"
+        ],
+        "to": "Martin, Jack K."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Spector, Timothy D.",
+          "Spector, Tim D."
+        ],
+        "to": "Spector, Timothy D."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Hernandez, M.",
+          "Hernandez, M. -S."
+        ],
+        "to": "Hernandez, M. S."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Litzelman, Debra K.",
+          "Litzelman, D. K."
+        ],
+        "to": "Litzelman, Debra K."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Downs, Steve",
+          "Downs, Steven M."
+        ],
+        "to": "Downs, Steve"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Weidle, Paul J.",
+          "Weidle, Paul"
+        ],
+        "to": "Weidle, Paul J."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Langstrom, Niklas",
+          "Langstrom, N."
+        ],
+        "to": "Langstrom, Niklas"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Zerr, Ashley",
+          "Zerr, Ashley M."
+        ],
+        "to": "Zerr, Ashley"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Blanchard, P.",
+          "Blanchard, P. K."
+        ],
+        "to": "Blanchard, P. K."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ellingson, Jarrod M.",
+          "Ellingson, J. M."
+        ],
+        "to": "Ellingson, Jarrod M."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sariaslan, Amir",
+          "Sariaslan, A."
+        ],
+        "to": "Sariaslan, Amir"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Balanutsa, P.",
+          "Balanutsa, P. V."
+        ],
+        "to": "Balanutsa, P. V."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cawley, John",
+          "Cawley, John H."
+        ],
+        "to": "Cawley, John"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Hurdle, John F.",
+          "Hurdle, John"
+        ],
+        "to": "Hurdle, John F."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Goodnight, Jackson A.",
+          "Goodnight, J. A."
+        ],
+        "to": "Goodnight, Jackson A."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Jayawardene, W.",
+          "Jayawardene, Wasantha"
+        ],
+        "to": "Jayawardene, Wasantha"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Schneider, B. L.",
+          "Schneider, B."
+        ],
+        "to": "Schneider, B. L."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Miller, Drew",
+          "Miller, Drew J."
+        ],
+        "to": "Miller, Drew"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Murataeva, Natalia",
+          "Murataeva, N."
+        ],
+        "to": "Murataeva, Natalia"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Robertson, S. H.",
+          "Robertson, S."
+        ],
+        "to": "Robertson, S. H."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cornett, Ben",
+          "Cornett, Benjamin L."
+        ],
+        "to": "Cornett, Benjamin L."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Poznanski, Dovi",
+          "Poznanski, D."
+        ],
+        "to": "Poznanski, Dovi"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Mohapatra, S.",
+          "Mohapatra, S. R. P."
+        ],
+        "to": "Mohapatra, S. R. P."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Bell, Teresa M.",
+          "Bell, Teresa"
+        ],
+        "to": "Bell, Teresa M."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dzemidzic, Mario",
+          "Dzemidzic, M."
+        ],
+        "to": "Dzemidzic, Mario"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Fortenberry, J. D.",
+          "Fortenberry, Dennis"
+        ],
+        "to": "Fortenberry, J. D."
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Authors (Full Names)",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Authors (Full Names)",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Hersh, W.",
+          "Hersh, WR"
+        ],
+        "to": "Hersh, W. R."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Frieman, J.",
+          "Frieman, J. A."
+        ],
+        "to": "Frieman, J. A."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Nurnberger, J.",
+          "Nurnberger, J. N."
+        ],
+        "to": "Nurnberger, J. N."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Gaski, Greg E.",
+          "Gaski, Greg"
+        ],
+        "to": "Gaski, Greg E."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Koeneke, K.",
+          "Koneke, K."
+        ],
+        "to": "Koeneke, K."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Koepke, L.",
+          "Kopke, L."
+        ],
+        "to": "Koepke, L."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Langstrom, Niklas",
+          "Langstorm, Niklas"
+        ],
+        "to": "Langstrom, Niklas"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Smith, J.",
+          "Smith, J. S."
+        ],
+        "to": "Smith, J. S."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Huber, M.",
+          "Huber, M. E."
+        ],
+        "to": "Huber, M. E."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Malecki, Pa.",
+          "Malecki, P."
+        ],
+        "to": "Malecki, P."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Clark, J",
+          "Clark, J. A."
+        ],
+        "to": "Clark, J. A."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Finn, Peter R.",
+          "Finn, Peter"
+        ],
+        "to": "Finn, Peter R."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Coy, Kelsey",
+          "Coy, Kelsey C."
+        ],
+        "to": "Coy, Kelsey C."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Hansen, P. H.",
+          "Hansen, P."
+        ],
+        "to": "Hansen, P. H."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Martin, Nicholas G.",
+          "Martins, Nicholas G."
+        ],
+        "to": "Martin, Nicholas G."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Schoenbeck, A.",
+          "Schonbeck, A."
+        ],
+        "to": "Schoenbeck, A."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Magaa-Sandoval, F.",
+          "Magana-Sandoval, F."
+        ],
+        "to": "Magana-Sandoval, F."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Rickert, M. E.",
+          "Rickert, M."
+        ],
+        "to": "Rickert, M. E."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Liu, Emily",
+          "Liu, Emily L."
+        ],
+        "to": "Liu, Emily L."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Vaughan, Ellen L.",
+          "Vaughan, E. L."
+        ],
+        "to": "Vaughan, Ellen L."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dueren, M.",
+          "Duren, M."
+        ],
+        "to": "Dueren, M."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Alexander, G.",
+          "Alexandre, G."
+        ],
+        "to": "Alexander, G."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Garcia, J.",
+          "Garcia, J. A."
+        ],
+        "to": "Garcia, J. A."
+      }
+    ]
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Authors (Full Names) to Authors-revised",
+    "oldColumnName": "Authors (Full Names)",
+    "newColumnName": "Authors-revised"
+  },
+  {
+    "op": "core/column-move",
+    "description": "Move column Unique ID to position 0",
+    "columnName": "Unique ID",
+    "index": 0
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Unique ID to id",
+    "oldColumnName": "Unique ID",
+    "newColumnName": "id"
+  },
+  {
+    "op": "core/multivalued-cell-join",
+    "description": "Join multi-valued cells in column Authors-revised",
+    "columnName": "Authors-revised",
+    "keyColumnName": "id",
+    "separator": "|"
+  }
+]
