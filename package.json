@@ -1,6 +1,6 @@
 {
   "name": "agc1",
-  "version": "0.0.0",
+  "version": "0.3.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -13,7 +13,7 @@
   },
   "private": true,
   "dependencies": {
-    "cns-pubvis": ">=0.7.0 <1.0.0",
+    "cns-pubvis": ">=0.8.0 <1.0.0",
     "@angular/animations": "^8.1.0",
     "@angular/cdk": "^8.0.2",
     "@angular/common": "^8.1.0",
